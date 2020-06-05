@@ -1,0 +1,39 @@
+@import "../../../colors";
+
+.list {
+  width: 60px;
+  height: 70px;
+  list-style-type: none;
+}
+
+.visuallyHidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.item {
+  width: 58px;
+  height: 5px;
+  margin: 15px 0;
+}
+
+.button {
+  width: 58px;
+  height: 5px;
+  background-color: $white;
+  border: 1px solid $white;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:active {
+  width: 58px;
+  height: 5px;
+  background-color: transparent;
+  border: 1px solid $white;
+  outline: none;
+  cursor: pointer;
+}

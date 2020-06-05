@@ -1,24 +1,4 @@
-@import "../../colors";
-
-.list {
-  width: 60px;
-  height: 70px;
-  list-style-type: none;
-}
-
-.visuallyHidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.item {
-  width: 58px;
-  height: 5px;
-  margin: 10px 0;
-}
+@import "../../../colors";
 
 .button {
   width: 58px;

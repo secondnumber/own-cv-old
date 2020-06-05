@@ -1,0 +1,15 @@
+@import "../../colors";
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: $grayDark;
+}
+
+.toggles {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
