@@ -5,6 +5,9 @@ import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
 
 const HomePage = () =>
     <div className={classes.wrapper}>
+        <div className={classes.toggles}>
+            <ToggleButtons />
+        </div>
             <div className={classes.introBlock}>
                 <div className={classes.intro}>
                     <img className={classes.logo} src={Logo} alt="Logo"/>
@@ -34,9 +37,6 @@ const HomePage = () =>
                     </div>
                 </div>
             <div className={classes.imageBlock}>
-                <div className={classes.buttons}>
-                <ToggleButtons />
-                </div>
             </div>
     </div>;
 
