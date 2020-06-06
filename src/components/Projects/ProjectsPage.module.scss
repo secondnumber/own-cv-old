@@ -1,0 +1,56 @@
+@import "../../colors";
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: $grayDark;
+}
+
+.toggles {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.block {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  flex-basis: 160px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.title {
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: normal;
+  color: $orange;
+}
+
+.turquoise {
+  color: $turquoise;
+}
+
+.section {
+  display: flex;
+}
+
+.listTags {
+  list-style-type: none;
+}
+
+.listProjects {
+  flex-shrink: 1;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
