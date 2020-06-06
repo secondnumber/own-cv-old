@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './HomePage.module.scss'
 import Logo from '../../assets/img/logo.png'
-import ToggleButtons from "../common/ToggleButtons";
+import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
 
 const HomePage = () =>
     <div className={classes.wrapper}>
