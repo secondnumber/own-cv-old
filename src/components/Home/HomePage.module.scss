@@ -1,10 +1,18 @@
 @import "../../colors";
 
 .wrapper {
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
   background-color: $grayDark;
+}
+
+.toggles {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .introBlock {
@@ -85,8 +93,4 @@
   font-size: 40px;
   font-weight: normal;
   color: $orange;
-}
-
-.buttons {
-  padding-right: 20px;
 }
