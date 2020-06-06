@@ -29,7 +29,7 @@ const AboutPage = () =>
                     pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.&nbsp;
                 <span className={classes.turquoise}>&lt;/p&gt;</span>
             </p>
-            <Button />
+            <Button text={'Download Resume'} />
             </div>
             <div className={classes.achievements}>
                 <Skill />

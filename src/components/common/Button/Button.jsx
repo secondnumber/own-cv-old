@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Button.module.scss'
 
-const Button = () =>
-    <button className={classes.button}>Download Resume</button>;
+const Button = (props) =>
+    <button className={classes.button}>{props.text}</button>;
 
 export default Button;
