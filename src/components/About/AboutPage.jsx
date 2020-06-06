@@ -3,6 +3,7 @@ import classes from './AboutPage.module.scss'
 import Logo from '../../assets/img/logo.png'
 import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
 import Button from "../common/Button/Button";
+import Skill from "./Skill/Skill";
 
 const AboutPage = () =>
     <div className={classes.wrapper}>
@@ -10,10 +11,11 @@ const AboutPage = () =>
             <ToggleButtons />
         </div>
         <div className={classes.block}>
-            <div className={classes.logo}>
-                <img className={classes.logo} src={Logo} alt="Logo"/>
+            <div className={classes.header}>
+                <img src={Logo} alt="Logo"/>
             </div>
-            <h1>
+            <div className={classes.section}>
+            <h1 className={classes.title}>
                 <span className={classes.turquoise}>&#123;</span>
                 &nbsp;About Me&nbsp;
                 <span className={classes.turquoise}>&#125;</span>
@@ -21,13 +23,19 @@ const AboutPage = () =>
             <h2 className={classes.caption}>I’m Front-end Developer with
                 6 years experience</h2>
             <p className={classes.description}>
-                &lt;p&gt; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                <span className={classes.turquoise}>&lt;p&gt;</span>
+                &nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                     parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. &lt;/p&gt;
+                    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.&nbsp;
+                <span className={classes.turquoise}>&lt;/p&gt;</span>
             </p>
             <Button />
+            </div>
             <div className={classes.achievements}>
-
+                <Skill />
+                <Skill />
+                <Skill />
+                <Skill />
             </div>
         </div>
     </div>;
