@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from "./ProjectsPage.module.scss";
 import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
-import Logo from "../../assets/img/logo.png";
 import Button from "../common/Button/Button";
 import Tag from "./Tag/Tag";
 import Project from "./Project/Project";
+import Header from "../common/Header/Header";
 
 const ProjectsPage = () =>
     <div className={classes.wrapper}>
@@ -12,9 +12,7 @@ const ProjectsPage = () =>
             <ToggleButtons />
         </div>
         <div className={classes.block}>
-            <div className={classes.header}>
-                <img src={Logo} alt="Logo"/>
-            </div>
+            <Header />
                 <h1 className={classes.title}>
                     <span className={classes.turquoise}>&#123;</span>
                     &nbsp;My work&nbsp;

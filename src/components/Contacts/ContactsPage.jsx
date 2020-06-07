@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from "./ContactsPage.module.scss";
 import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
-import Logo from "../../assets/img/logo.png";
 import Button from "../common/Button/Button";
 import Social from "./Social/Social";
+import Header from "../common/Header/Header";
 
 const ContactsPage = () =>
     <div className={classes.wrapper}>
@@ -11,9 +11,7 @@ const ContactsPage = () =>
             <ToggleButtons />
         </div>
         <div className={classes.block}>
-            <div className={classes.header}>
-                <img src={Logo} alt="Logo"/>
-            </div>
+            <Header />
             <h1 className={classes.title}>
                 <span className={classes.turquoise}>&#123;</span>
                 &nbsp;Contact me&nbsp;
