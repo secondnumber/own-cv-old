@@ -4,6 +4,7 @@ import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
 import Button from "../common/Button/Button";
 import Social from "./Social/Social";
 import Header from "../common/Header/Header";
+import Title from "../common/Title/Title";
 
 const ContactsPage = () =>
     <div className={classes.wrapper}>
@@ -12,11 +13,7 @@ const ContactsPage = () =>
         </div>
         <div className={classes.block}>
             <Header />
-            <h1 className={classes.title}>
-                <span className={classes.turquoise}>&#123;</span>
-                &nbsp;Contact me&nbsp;
-                <span className={classes.turquoise}>&#125;</span>
-            </h1>
+            <Title />
             <p className={classes.legend}>
                 Get in touch with me
             </p>

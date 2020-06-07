@@ -4,6 +4,7 @@ import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
 import Button from "../common/Button/Button";
 import Skill from "./Skill/Skill";
 import Header from "../common/Header/Header";
+import Title from "../common/Title/Title";
 
 const AboutPage = () =>
     <div className={classes.wrapper}>
@@ -13,11 +14,7 @@ const AboutPage = () =>
         <div className={classes.block}>
             <Header />
             <div className={classes.section}>
-            <h1 className={classes.title}>
-                <span className={classes.turquoise}>&#123;</span>
-                &nbsp;About Me&nbsp;
-                <span className={classes.turquoise}>&#125;</span>
-            </h1>
+            <Title />
             <h2 className={classes.caption}>I’m Front-end Developer with
                 6 years experience</h2>
             <p className={classes.description}>
