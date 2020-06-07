@@ -3,6 +3,7 @@
 .wrapper {
   position: relative;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
   background-color: $grayDark;
 }
@@ -15,7 +16,7 @@
 }
 
 .block {
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
