@@ -4,6 +4,7 @@
   position: relative;
   z-index: 1;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
@@ -37,12 +38,6 @@
   flex-direction: column;
   align-items: flex-start;
   transform: translate(-50%, 0);
-}
-
-.header {
-  flex-basis: 160px;
-  width: 100%;
-  padding-top: 10px;
 }
 
 .intro {

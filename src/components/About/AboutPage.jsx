@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './AboutPage.module.scss'
-import Logo from '../../assets/img/logo.png'
 import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
 import Button from "../common/Button/Button";
 import Skill from "./Skill/Skill";
+import Header from "../common/Header/Header";
 
 const AboutPage = () =>
     <div className={classes.wrapper}>
@@ -11,9 +11,7 @@ const AboutPage = () =>
             <ToggleButtons />
         </div>
         <div className={classes.block}>
-            <div className={classes.header}>
-                <img src={Logo} alt="Logo"/>
-            </div>
+            <Header />
             <div className={classes.section}>
             <h1 className={classes.title}>
                 <span className={classes.turquoise}>&#123;</span>

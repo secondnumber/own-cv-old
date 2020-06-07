@@ -3,6 +3,7 @@
 .wrapper {
   position: relative;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
   background-color: $grayDark;
 }
@@ -20,12 +21,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header {
-  flex-basis: 160px;
-  width: 100%;
-  padding-top: 10px;
 }
 
 .title {

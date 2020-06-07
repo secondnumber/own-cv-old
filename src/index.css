@@ -36,5 +36,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: hsla(0, 0%, 16%, 1);
   color: white;
 }

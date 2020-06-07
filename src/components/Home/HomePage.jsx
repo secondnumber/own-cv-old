@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './HomePage.module.scss'
-import Logo from '../../assets/img/logo.png'
+import classes from './HomePage.module.scss';
 import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
+import Header from "../common/Header/Header";
 
 const HomePage = () =>
     <div className={classes.wrapper}>
@@ -10,9 +10,7 @@ const HomePage = () =>
         </div>
         <div className={classes.bg}></div>
         <div className={classes.block}>
-            <div className={classes.header}>
-                <img src={Logo} alt="Logo"/>
-            </div>
+            <Header />
             <div className={classes.intro}>
                 <p className={classes.title}>
                     <span className={classes.turquoise}>&lt;title&gt;</span>
