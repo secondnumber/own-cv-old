@@ -2,9 +2,11 @@ import React from 'react';
 import classes from './HomePage.module.scss';
 import ToggleButtons from "../common/ToggleButtons/ToggleButtons";
 import Header from "../common/Header/Header";
+import Menu from "../common/Menu/Menu";
 
 const HomePage = () =>
     <div className={classes.wrapper}>
+        <Menu />
         <div className={classes.toggles}>
             <ToggleButtons />
         </div>

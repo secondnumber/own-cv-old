@@ -5,6 +5,7 @@ import Button from "../common/Button/Button";
 import Tag from "./Tag/Tag";
 import Project from "./Project/Project";
 import Header from "../common/Header/Header";
+import Title from "../common/Title/Title";
 
 const ProjectsPage = () =>
     <div className={classes.wrapper}>
@@ -13,11 +14,7 @@ const ProjectsPage = () =>
         </div>
         <div className={classes.block}>
             <Header />
-                <h1 className={classes.title}>
-                    <span className={classes.turquoise}>&#123;</span>
-                    &nbsp;My work&nbsp;
-                    <span className={classes.turquoise}>&#125;</span>
-                </h1>
+                <Title />
             <div className={classes.section}>
                 <ul className={classes.listTags}>
                     <Tag text={'ALL'}/>
