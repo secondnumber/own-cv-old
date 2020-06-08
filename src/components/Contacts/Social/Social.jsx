@@ -4,7 +4,7 @@ import FacebookImg from '../../../assets/img/facebook.png';
 
 const Social = (props) => (
   <li className={classes.item}>
-    <img src={FacebookImg} alt="Facebook" />
+    <img src={props.image} alt="SocialIcon" />
   </li>
 );
 

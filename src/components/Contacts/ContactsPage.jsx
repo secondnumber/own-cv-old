@@ -5,15 +5,20 @@ import Button from '../common/Button/Button';
 import Social from './Social/Social';
 import Header from '../common/Header/Header';
 import Title from '../common/Title/Title';
+import Facebook from '../../assets/img/facebook.png';
+import Twitter from '../../assets/img/twitter.png';
+import Behance from '../../assets/img/behance.png';
+import Linkedin from '../../assets/img/linkedin.png';
+import Pinterest from '../../assets/img/pinterest.png';
 
-const ContactsPage = () => (
+const ContactsPage = (props) => (
   <div className={classes.wrapper}>
     <div className={classes.toggles}>
       <ToggleButtons />
     </div>
     <div className={classes.block}>
       <Header />
-      <Title />
+      <Title text={'Contact me'} />
       <p className={classes.legend}>Get in touch with me</p>
       <div className={classes.section}>
         <div className={classes.form}>
@@ -45,11 +50,11 @@ const ContactsPage = () => (
           <section className={classes.paragraph}>
             <h2 className={classes.caption}>Social Networks</h2>
             <ul className={classes.list}>
-              <Social />
-              <Social />
-              <Social />
-              <Social />
-              <Social />
+              <Social image={Facebook} />
+              <Social image={Twitter} />
+              <Social image={Pinterest} />
+              <Social image={Linkedin} />
+              <Social image={Behance} />
             </ul>
           </section>
         </div>
