@@ -14,7 +14,7 @@ const AboutPage = () => (
     <div className={classes.block}>
       <Header />
       <div className={classes.section}>
-        <Title />
+        <Title text={'ABOUT ME'} />
         <h2 className={classes.caption}>
           I’m Front-end Developer with 6 years experience
         </h2>
