@@ -14,7 +14,7 @@ const ProjectsPage = () => (
     </div>
     <div className={classes.block}>
       <Header />
-      <Title />
+      <Title text={'My projects'} />
       <div className={classes.section}>
         <ul className={classes.listTags}>
           <Tag text={'ALL'} />
