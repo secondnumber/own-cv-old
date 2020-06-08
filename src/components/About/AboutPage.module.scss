@@ -3,6 +3,7 @@
 .wrapper {
   position: relative;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
   background-color: $grayDark;
 }
@@ -15,7 +16,7 @@
 }
 
 .block {
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -33,20 +34,8 @@
   text-align: center;
 }
 
-.title {
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 55px;
-  font-weight: normal;
-  color: $orange;
-}
-
-.turquoise {
-  color: $turquoise;
-}
-
 .caption {
-  padding-bottom: 40px;
+  padding: 40px 0;
   font-size: 25px;
   font-weight: normal;
   color: $turquoise;
