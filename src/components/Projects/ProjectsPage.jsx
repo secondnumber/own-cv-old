@@ -1,41 +1,39 @@
 import React from 'react';
 import classes from './ProjectsPage.module.scss';
-import ToggleButtons from '../common/ToggleButtons/ToggleButtons';
 import Button from '../common/Button/Button';
 import Tag from './Tag/Tag';
 import Project from './Project/Project';
 import Header from '../common/Header/Header';
 import Title from '../common/Title/Title';
+import ToggleButtonsContainer from '../common/ToggleButtons/ToggleButtonsContainer';
 
-const ProjectsPage = () => (
-  <div className={classes.wrapper}>
-    <div className={classes.toggles}>
-      <ToggleButtons />
-    </div>
-    <div className={classes.block}>
-      <Header />
-      <Title text={'My projects'} />
-      <div className={classes.section}>
-        <ul className={classes.listTags}>
-          <Tag text={'ALL'} />
-          <Tag text={'Branding'} />
-          <Tag text={'Media'} />
-          <Tag text={'Illustration'} />
-          <Tag text={'UI Design'} />
-          <Tag text={'UX Design'} />
-        </ul>
-        <div className={classes.sectionProjects}>
-          <ul className={classes.listProjects}>
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-          </ul>
-          <Button text={'Show more'} />
+const ProjectsPage = (props) => {
+  let tagsList = props.projects.tags.map((el) => (
+    <Tag key={el.id} name={el.name} />
+  ));
+
+  let projectsList = props.projects.projects.map((el) => (
+    <Project key={el.id} id={el.id} name={el.name} image={el.image} />
+  ));
+
+  return (
+    <div className={classes.wrapper}>
+      <div className={classes.toggles}>
+        <ToggleButtonsContainer />
+      </div>
+      <div className={classes.block}>
+        <Header />
+        <Title text={props.projects.title} />
+        <div className={classes.section}>
+          <ul className={classes.listTags}>{tagsList}</ul>
+          <div className={classes.sectionProjects}>
+            <ul className={classes.listProjects}>{projectsList}</ul>
+            <Button text={props.projects.buttonName} />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default ProjectsPage;

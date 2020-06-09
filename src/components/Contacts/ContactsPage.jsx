@@ -1,19 +1,19 @@
 import React from 'react';
 import classes from './ContactsPage.module.scss';
-import ToggleButtons from '../common/ToggleButtons/ToggleButtons';
 import Button from '../common/Button/Button';
 import Social from './Social/Social';
 import Header from '../common/Header/Header';
 import Title from '../common/Title/Title';
+import ToggleButtonsContainer from '../common/ToggleButtons/ToggleButtonsContainer';
 
 const ContactsPage = (props) => {
   let socialList = props.social.socialItems.map((el) => (
-      <Social key={el.id} name={el.name} link={el.link} image={el.imageColor}/>
-  ))
+    <Social key={el.id} name={el.name} link={el.link} image={el.imageColor} />
+  ));
   return (
     <div className={classes.wrapper}>
       <div className={classes.toggles}>
-        <ToggleButtons />
+        <ToggleButtonsContainer />
       </div>
       <div className={classes.block}>
         <Header />
@@ -56,9 +56,7 @@ const ContactsPage = (props) => {
             </section>
             <section className={classes.paragraph}>
               <h2 className={classes.caption}>Social Networks</h2>
-              <ul className={classes.list}>
-                {socialList}
-              </ul>
+              <ul className={classes.list}>{socialList}</ul>
             </section>
           </div>
         </div>

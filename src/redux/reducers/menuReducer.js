@@ -1,4 +1,5 @@
 let initialState = {
+  title: 'ANA DOE',
   menuItems: [
     { id: 1, name: 'Home', link: '/' },
     { id: 2, name: 'About me', link: '/about' },
