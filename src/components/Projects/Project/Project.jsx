@@ -1,10 +1,12 @@
 import React from 'react';
 import classes from './Project.module.scss';
-import ProjectImage from '../../../assets/img/project.png';
+import { Link } from 'react-router-dom';
 
 const Project = (props) => (
   <li className={classes.item}>
-    <img className={classes.image} src={ProjectImage} alt="Project" />
+    <Link to={`/projects/${props.id}`}>
+      <img className={classes.image} src={props.image} alt={props.name} />
+    </Link>
   </li>
 );
 

@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './components/Home/HomePage';
-import ProjectsPage from './components/Projects/ProjectsPage';
 import AboutPageContainer from './components/About/AboutPageContainer';
 import ContactsPageContainer from './components/Contacts/ContactsPageContainer';
+import ProjectsPageContainer from './components/Projects/ProjectsPageContainer';
 
 const App = () => (
   <Router>
@@ -16,7 +16,7 @@ const App = () => (
         <AboutPageContainer />
       </Route>
       <Route path="/projects">
-        <ProjectsPage />
+        <ProjectsPageContainer />
       </Route>
       <Route path="/contacts">
         <ContactsPageContainer />
