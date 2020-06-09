@@ -1,0 +1,16 @@
+@import "../../../colors";
+
+.item {
+  min-width: 150px;
+  padding: 15px 0 15px 20px;
+  background-color: $white;
+  color: $grayDark;
+  cursor: pointer;
+}
+
+.item:active,
+.item:hover {
+  background-color: $turquoise;
+  color: $white;
+  cursor: pointer;
+}
