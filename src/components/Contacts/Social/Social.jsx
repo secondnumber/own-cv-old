@@ -1,10 +1,12 @@
 import React from 'react';
 import classes from './Social.module.scss';
-import FacebookImg from '../../../assets/img/facebook.png';
+import { Link } from 'react-router-dom';
 
 const Social = (props) => (
   <li className={classes.item}>
-    <img src={props.image} alt="SocialIcon" />
+    <Link to={props.link}>
+      <img src={props.image} alt={props.name} />
+    </Link>
   </li>
 );
 
