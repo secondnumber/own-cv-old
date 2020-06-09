@@ -5,6 +5,7 @@ let initialState = {
     phone: '+030 98 29 05',
     email: 'anadoe@domain.com',
     site: 'www.envato.com',
+    buttonName: 'Submit mail',
 };
 
 const contactsReducer = (state = initialState, action) => {

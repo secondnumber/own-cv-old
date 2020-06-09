@@ -3,8 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './components/Home/HomePage';
 import ProjectsPage from './components/Projects/ProjectsPage';
-import ContactsPage from './components/Contacts/ContactsPage';
 import AboutPageContainer from './components/About/AboutPageContainer';
+import ContactsPageContainer from './components/Contacts/ContactsPageContainer';
 
 const App = () => (
   <Router>
@@ -19,7 +19,7 @@ const App = () => (
         <ProjectsPage />
       </Route>
       <Route path="/contacts">
-        <ContactsPage />
+        <ContactsPageContainer />
       </Route>
     </Switch>
   </Router>
