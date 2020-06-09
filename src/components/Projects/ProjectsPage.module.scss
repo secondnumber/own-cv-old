@@ -50,6 +50,13 @@
   list-style-type: none;
 }
 
+.sectionProjects {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .listProjects {
   flex-shrink: 1;
   display: flex;
