@@ -14,7 +14,7 @@ const ProjectsPage = () => (
     </div>
     <div className={classes.block}>
       <Header />
-      <Title />
+      <Title text={'My projects'} />
       <div className={classes.section}>
         <ul className={classes.listTags}>
           <Tag text={'ALL'} />
@@ -24,14 +24,16 @@ const ProjectsPage = () => (
           <Tag text={'UI Design'} />
           <Tag text={'UX Design'} />
         </ul>
-        <ul className={classes.listProjects}>
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-        </ul>
+        <div className={classes.sectionProjects}>
+          <ul className={classes.listProjects}>
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+          </ul>
+          <Button text={'Show more'} />
+        </div>
       </div>
-      <Button text={'Show more'} />
     </div>
   </div>
 );

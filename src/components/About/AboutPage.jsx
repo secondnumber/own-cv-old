@@ -6,37 +6,37 @@ import Skill from './Skill/Skill';
 import Header from '../common/Header/Header';
 import Title from '../common/Title/Title';
 
-const AboutPage = () => (
-  <div className={classes.wrapper}>
-    <div className={classes.toggles}>
-      <ToggleButtons />
-    </div>
-    <div className={classes.block}>
-      <Header />
-      <div className={classes.section}>
-        <Title />
-        <h2 className={classes.caption}>
-          I’m Front-end Developer with 6 years experience
-        </h2>
-        <p className={classes.description}>
-          <span className={classes.turquoise}>&lt;p&gt;</span>
-          &nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim.&nbsp;
-          <span className={classes.turquoise}>&lt;/p&gt;</span>
-        </p>
-        <Button text={'Download Resume'} />
+const AboutPage = (props) => {
+  let skillsList = props.about.skills.map((el) => (
+    <Skill
+      key={el.id}
+      name={el.name}
+      value={el.value}
+      unit={el.unit}
+      color={el.color}
+    />
+  ));
+  return (
+    <div className={classes.wrapper}>
+      <div className={classes.toggles}>
+        <ToggleButtons />
       </div>
-      <div className={classes.achievements}>
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+      <div className={classes.block}>
+        <Header />
+        <div className={classes.section}>
+          <Title text={props.about.title} />
+          <h2 className={classes.caption}>{props.about.caption}</h2>
+          <p className={classes.description}>
+            <span className={classes.turquoise}>&lt;p&gt;</span>
+            &nbsp;{props.about.description}&nbsp;
+            <span className={classes.turquoise}>&lt;/p&gt;</span>
+          </p>
+          <Button text={props.about.buttonName} />
+        </div>
+        <div className={classes.achievements}>{skillsList}</div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default AboutPage;
