@@ -2,9 +2,9 @@ import React from 'react';
 import classes from './AboutPage.module.scss';
 import Button from '../common/Button/Button';
 import Skill from './Skill/Skill';
-import Header from '../common/Header/Header';
 import Title from '../common/Title/Title';
 import ToggleButtonsContainer from '../common/ToggleButtons/ToggleButtonsContainer';
+import MenuContainer from '../common/Menu/MenuContainer';
 
 const AboutPage = (props) => {
   let skillsList = props.about.skills.map((el) => (
@@ -22,7 +22,7 @@ const AboutPage = (props) => {
         <ToggleButtonsContainer />
       </div>
       <div className={classes.block}>
-        <Header />
+        <MenuContainer />
         <div className={classes.section}>
           <Title text={props.about.title} />
           <h2 className={classes.caption}>{props.about.caption}</h2>

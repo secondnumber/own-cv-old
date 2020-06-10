@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Menu from './Menu';
+import { closeMenu, openMenu } from '../../../redux/reducers/menuReducer';
 
 let mapStateToProps = (state) => {
   return {
@@ -9,10 +10,6 @@ let mapStateToProps = (state) => {
   };
 };
 
-let mapDispatchToProps = (dispatch) => {
-  return {};
-};
-
-const MenuContainer = connect(mapStateToProps, mapDispatchToProps)(Menu);
+const MenuContainer = connect(mapStateToProps, { closeMenu, openMenu })(Menu);
 
 export default MenuContainer;

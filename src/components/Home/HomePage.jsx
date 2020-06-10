@@ -1,18 +1,16 @@
 import React from 'react';
 import classes from './HomePage.module.scss';
-import Header from '../common/Header/Header';
 import ToggleButtonsContainer from '../common/ToggleButtons/ToggleButtonsContainer';
 import MenuContainer from '../common/Menu/MenuContainer';
 
 const HomePage = () => (
   <div className={classes.wrapper}>
-    <MenuContainer />
     <div className={classes.toggles}>
       <ToggleButtonsContainer />
     </div>
     <div className={classes.bg}></div>
     <div className={classes.block}>
-      <Header />
+      <MenuContainer />
       <div className={classes.intro}>
         <p className={classes.title}>
           <span className={classes.turquoise}>&lt;title&gt;</span>
