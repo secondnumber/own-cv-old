@@ -2,9 +2,9 @@ import React from 'react';
 import classes from './ContactsPage.module.scss';
 import Button from '../common/Button/Button';
 import Social from './Social/Social';
-import Header from '../common/Header/Header';
 import Title from '../common/Title/Title';
 import ToggleButtonsContainer from '../common/ToggleButtons/ToggleButtonsContainer';
+import MenuContainer from '../common/Menu/MenuContainer';
 
 const ContactsPage = (props) => {
   let socialList = props.social.socialItems.map((el) => (
@@ -16,7 +16,7 @@ const ContactsPage = (props) => {
         <ToggleButtonsContainer />
       </div>
       <div className={classes.block}>
-        <Header />
+        <MenuContainer />
         <Title text={props.contacts.title} />
         <p className={classes.legend}>{props.contacts.caption}</p>
         <div className={classes.section}>

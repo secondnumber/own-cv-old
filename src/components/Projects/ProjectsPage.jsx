@@ -3,9 +3,9 @@ import classes from './ProjectsPage.module.scss';
 import Button from '../common/Button/Button';
 import Tag from './Tag/Tag';
 import Project from './Project/Project';
-import Header from '../common/Header/Header';
 import Title from '../common/Title/Title';
 import ToggleButtonsContainer from '../common/ToggleButtons/ToggleButtonsContainer';
+import MenuContainer from '../common/Menu/MenuContainer';
 
 const ProjectsPage = (props) => {
   let tagsList = props.projects.tags.map((el) => (
@@ -22,7 +22,7 @@ const ProjectsPage = (props) => {
         <ToggleButtonsContainer />
       </div>
       <div className={classes.block}>
-        <Header />
+        <MenuContainer />
         <Title text={props.projects.title} />
         <div className={classes.section}>
           <ul className={classes.listTags}>{tagsList}</ul>
