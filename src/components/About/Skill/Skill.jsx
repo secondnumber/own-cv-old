@@ -1,15 +1,22 @@
 import React from 'react';
 import classes from './Skill.module.scss';
 
-const Skill = () => (
+const Skill = (props) => (
   <div className={classes.wrapper}>
     <div className={classes.label}>
-      <span className={classes.caption}>HTML</span>
-      <span className={classes.caption}>90%</span>
+      <span className={classes.caption}>{props.name}</span>
+      <span className={classes.caption}>
+        {props.value}
+        {props.unit}
+      </span>
     </div>
     <div className={classes.bg}></div>
-    <div className={classes.bar}></div>
-    <progress className={classes.progress} max="100" value="90"></progress>
+    <div className={classes.bar} style={{ width: `${props.value}%`}}></div>
+    <progress
+      className={classes.progress}
+      max="100"
+      value={props.value}
+    ></progress>
   </div>
 );
 

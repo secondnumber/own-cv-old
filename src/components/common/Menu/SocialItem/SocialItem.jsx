@@ -1,13 +1,13 @@
 import React from 'react';
-import classes from './Social.module.scss';
+import classes from './SocialItem.module.scss';
 import { Link } from 'react-router-dom';
 
-const Social = (props) => (
+const SocialItem = (props) => (
   <li className={classes.item}>
-    <Link to={props.link}>
+    <Link activeClassName={classes.link} to={props.link}>
       <img src={props.image} alt={props.name} />
     </Link>
   </li>
 );
 
-export default Social;
+export default SocialItem;

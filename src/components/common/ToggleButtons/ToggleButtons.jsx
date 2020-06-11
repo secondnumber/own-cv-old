@@ -1,30 +1,13 @@
 import React from 'react';
 import classes from './ToggleButtons.module.scss';
-import { Link } from 'react-router-dom';
+import ToggleButton from './ToggleButton/ToggleButton';
 
-const ToggleButtons = () => (
-  <ul className={classes.list}>
-    <li className={classes.item}>
-      <Link to="/">
-        <button className={classes.button}></button>
-      </Link>
-    </li>
-    <li className={classes.item}>
-      <Link to="/about">
-        <button className={classes.button}></button>
-      </Link>
-    </li>
-    <li className={classes.item}>
-      <Link to="/projects">
-        <button className={classes.button}></button>
-      </Link>
-    </li>
-    <li className={classes.item}>
-      <Link to="/contacts">
-        <button className={classes.button}></button>
-      </Link>
-    </li>
-  </ul>
-);
+const ToggleButtons = (props) => {
+    debugger;
+  let togglesList = props.menu.menuItems.map((el) => (
+    <ToggleButton key={el.id} link={el.link} />
+  ));
+  return <ul className={classes.list}>{togglesList}</ul>;
+};
 
 export default ToggleButtons;
