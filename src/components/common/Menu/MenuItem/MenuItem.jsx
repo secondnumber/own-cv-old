@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const MenuItem = (props) => (
   <li className={classes.item}>
-    <Link className={classes.link} to={props.link}>
+    <Link className={classes.link} to={props.link} onClick={props.closeMenu}>
       {props.name}
     </Link>
   </li>
