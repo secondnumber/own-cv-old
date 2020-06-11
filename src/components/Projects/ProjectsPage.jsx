@@ -12,9 +12,11 @@ const ProjectsPage = (props) => {
     <Tag key={el.id} name={el.name} />
   ));
 
-  let projectsList = props.projects.projects.map((el) => (
-    <Project key={el.id} id={el.id} name={el.name} image={el.image} />
-  ));
+  let projectsList = props.projects.projects.map((el) => {
+    if (el.id <= 4) {
+      return <Project key={el.id} id={el.id} name={el.name} image={el.image} />;
+    }
+  });
 
   return (
     <div className={classes.wrapper}>
