@@ -7,11 +7,12 @@ import MenuItem from './MenuItem/MenuItem';
 import SocialItem from './SocialItem/SocialItem';
 import Logo from '../../../assets/img/logo.png';
 import { openMenu } from '../../../redux/reducers/menuReducer';
+import MenuItemContainer from "./MenuItem/MenuItemContainer";
 
 const Menu = (props) => {
   debugger;
   let menuList = props.menu.menuItems.map((el) => (
-    <MenuItem key={el.id} name={el.name} link={el.link} />
+    <MenuItemContainer key={el.id} name={el.name} link={el.link} />
   ));
 
   let socialList = props.social.socialItems.map((el) => (
