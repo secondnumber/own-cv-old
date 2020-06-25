@@ -7,10 +7,10 @@ import MenuItem from './MenuItem/MenuItem';
 import SocialItem from './SocialItem/SocialItem';
 import Logo from '../../../assets/img/logo.png';
 import { openMenu } from '../../../redux/reducers/menuReducer';
-import MenuItemContainer from "./MenuItem/MenuItemContainer";
+import MenuItemContainer from './MenuItem/MenuItemContainer';
+import { NavLink } from 'react-router-dom';
 
 const Menu = (props) => {
-  debugger;
   let menuList = props.menu.menuItems.map((el) => (
     <MenuItemContainer key={el.id} name={el.name} link={el.link} />
   ));
@@ -25,9 +25,11 @@ const Menu = (props) => {
   ));
 
   return (
-    <div>
+    <>
       <div className={classes.header}>
-        <img src={Logo} alt="Logo" />
+        <NavLink to={'/'}>
+          <img src={Logo} alt="Logo" />
+        </NavLink>
         {props.menu.isClosed ? (
           <button className={classes.button} onClick={props.openMenu}>
             <img src={Burger} alt="Menu Icon" />
@@ -40,16 +42,16 @@ const Menu = (props) => {
       </div>
       <div className={props.menu.isClosed ? classes.close : classes.menu}>
         <div className={classes.block}>
-        <Title text={props.menu.title} />
-        <ul className={classes.listMenu}>{menuList}</ul>
-        <ul className={classes.listSocial}>{socialList}</ul>
-        <p>
-          2020 <span className={classes.turquoise}>ANA DOE</span> - All rights
-          reserved
-        </p>
+          <Title text={props.menu.title} />
+          <ul className={classes.listMenu}>{menuList}</ul>
+          <ul className={classes.listSocial}>{socialList}</ul>
+          <p>
+            2020 <span className={classes.turquoise}>ANA DOE</span> - All rights
+            reserved
+          </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ const ProjectsPage = (props) => {
   ));
 
   let projectsList = props.projects.projects.map((el) => {
-    if (el.id <= 4) {
+    if (el.id <= 2) {
       return <Project key={el.id} id={el.id} name={el.name} image={el.image} />;
     }
   });

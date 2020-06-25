@@ -21,11 +21,11 @@
 
 .menu {
   position: absolute;
+  padding-top: 210px;
   top: 0;
   left: 0;
-  padding-top: 210px;
   width: 100vw;
-  height: 100vh;
+  max-width: 100%;
   background-color: transparentize($grayDark, 0.1);
 }
 
