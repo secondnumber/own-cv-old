@@ -3,7 +3,6 @@ import classes from './ToggleButtons.module.scss';
 import ToggleButton from './ToggleButton/ToggleButton';
 
 const ToggleButtons = (props) => {
-    debugger;
   let togglesList = props.menu.menuItems.map((el) => (
     <ToggleButton key={el.id} link={el.link} />
   ));

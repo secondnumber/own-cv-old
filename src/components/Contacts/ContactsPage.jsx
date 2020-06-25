@@ -5,6 +5,7 @@ import Social from './Social/Social';
 import Title from '../common/Title/Title';
 import ToggleButtonsContainer from '../common/ToggleButtons/ToggleButtonsContainer';
 import MenuContainer from '../common/Menu/MenuContainer';
+import Form from './Form/Form';
 
 const ContactsPage = (props) => {
   let socialList = props.social.socialItems.map((el) => (
@@ -21,27 +22,7 @@ const ContactsPage = (props) => {
         <p className={classes.legend}>{props.contacts.caption}</p>
         <div className={classes.section}>
           <div className={classes.form}>
-            <form action="">
-              <input
-                className={classes.input}
-                type="text"
-                placeholder="_Name"
-              />
-              <input
-                className={classes.input}
-                type="text"
-                placeholder="_EMail"
-              />
-              <textarea
-                className={classes.textarea}
-                name="message"
-                id="message"
-                placeholder="_Message"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <Button text={props.contacts.buttonName} />
-            </form>
+            <Form />
           </div>
           <div className={classes.info}>
             <section className={classes.paragraph}>
